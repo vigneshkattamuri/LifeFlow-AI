@@ -36,6 +36,8 @@ yarn-error.*
 .env*
 backend/.env
 frontend/.env
+test-key.js
+frontend/test-key.js
 
 # typescript
 *.tsbuildinfo
