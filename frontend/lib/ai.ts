@@ -49,7 +49,7 @@ export const generateInsight = async (prompt: string) => {
             if (data.error) throw new Error(data.error.message);
             return data.choices?.[0]?.message?.content || "No insight generated.";
         } else {
-            // Default to Gemini (Google) - Using Flash 2.5 (Available Model)
+            // Default to Gemini (Google) - Using Flash 2.5 (2026 Standard Model)
             const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
             const response = await fetch(url, {
                 method: 'POST',

@@ -38,6 +38,7 @@ backend/.env
 frontend/.env
 test-key.js
 frontend/test-key.js
+backend/models_list.json
 
 # typescript
 *.tsbuildinfo
